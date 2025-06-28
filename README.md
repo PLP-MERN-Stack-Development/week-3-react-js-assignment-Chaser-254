@@ -1,71 +1,101 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19863802&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# 📝 Task Manager Application
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive and modern Task Manager built with **React (Vite)**, **Tailwind CSS**, and a **Node.js + Express** backend. It supports task creation, completion tracking, local persistence, theming, and API data fetching.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## 📁 Project Structure
 
-## Getting Started
+```
+WEEK-3-REACT-JS-ASSIGNMENT/
+├── backend/          # Node.js + Express backend
+├── src/              # React frontend with Vite + Tailwind
+```
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+### 🔧 Frontend Features
+- Vite + React + Tailwind CSS
+- Component-based architecture
+- React Router for navigation
+- State management using Hooks
+- Theme management with Context API
+- LocalStorage with custom hook
+- API integration with JSONPlaceholder
+- Responsive design (Mobile, Tablet, Desktop)
+- Light/Dark mode toggle
 
-## Files Included
+### 🧠 Backend Features
+- REST API using Express
+- MongoDB models with Mongoose
+- Routes to manage tasks (GET, POST, DELETE)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+---
 
-## Requirements
+## 🚀 Getting Started
 
-- Node.js (v18 or higher)
+### ✅ Prerequisites
+- Node.js
 - npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+- MongoDB
 
-## Project Structure
+---
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+## 🔌 Backend Setup
+
+```bash
+cd backend
+npm install
+# Create a .env file with your MongoDB URI
+node server.js
 ```
 
-## Submission
+### 📁 .env
+```
+MONGO_URI=mongodb://localhost:27017/taskmanager
+PORT=5000
+```
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## 💻 Frontend Setup
 
-## Resources
+```bash
+cd ..
+npm install
+npm run dev
+```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+---
+
+## 📚 Folder Overview
+
+- `src/components/` – Reusable UI components (Button, Card, Navbar)
+- `src/context/` – ThemeContext using React Context API
+- `src/hooks/` – Custom React hooks (e.g., useLocalStorage)
+- `src/pages/` – Route-based page components
+- `src/api/` – API utility functions
+- `backend/` – Node.js Express backend with MongoDB
+
+---
+
+## 🛠 Technologies Used
+
+- React + Vite
+- Tailwind CSS
+- React Router
+- Context API
+- MongoDB + Mongoose
+- Express.js
+- JSONPlaceholder API
+
+---
+
+## 👤 Author
+
+**Dream Chaser**  
+Built with ❤️ for learning and productivity
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
